@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='main.css')}}"
+    />
+    <title>کامپیوتر آرتا</title>
+  </head>
+
+  <body>
+    <div class="bs-tertiary-bg-rgb">
+      <header class="p-2 bg-light">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">صفحه اصلی</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">محصولات</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">درباره</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="container">{% block content %} {% endblock content %}</div>
+
+    
+<div class="container mb-5 pt-5">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center  py-1 mt-5 border-top">
+      <span class="mt-1 text-secondary opacity-25 ">طراحی و توسعه با افتخار در ایران</span>
+<span class="mt-1 text-secondary opacity-25 ">کامپیوتر آرتا © 1402 </span>
+  </footer>
+</div>
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
